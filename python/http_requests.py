@@ -20,7 +20,6 @@ class ConnectionFailed(RequestError):
 
 def get_apps():
     try:
-        apk_file = 'app.apk'
         response = requests.get('https://ws75.aptoide.com/api/7/apps/get/store_name=apps/q=bWF4U2RrPTE5Jm1heFNjcmVlbj1ub3JtYWwmbWF4R2xlcz0yLjA/group_name=games/limit=10/offset=0/mature=false',
                                 timeout=10)
 
