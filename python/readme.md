@@ -44,6 +44,3 @@ The script includes error handling for:
 - The APK will be downloaded as `app.apk` in the script's directory.
 - Modify the API URLs as needed to retrieve different apps or descriptions.
 
-## License
-This project is open-source. Feel free to modify and use it as needed.
-
