@@ -43,14 +43,12 @@ class MainActivityViewModel : ViewModel() {
                 AppDatabase.getDatabase(context)
                     ?.userDao()
                     ?.getAllUsers()?.firstOrNull()?.let {
-                        _userName.value = it.name
-                        _userImage.value = it.image
+                        _userName.postValue(it.name)
+                        _userImage.postValue(it.image)
                     }
             } catch (e: Exception) {
                 e.printStackTrace()
             }
-
         }
-
     }
 }
